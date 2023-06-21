@@ -1,3 +1,4 @@
+
 /* -------1200--------- */
 
 @media only screen and (min-width: 1200px) {
@@ -11,3 +12,25 @@
     }
 
 }
+/* 1440 */
+
+@media only screen and (max-width: 1540px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        min-width: 1200px !important;
+    }
+    .semy-ac-h2 , .semy-ac-h {
+        font-size: 16px !important;
+    }
+    
+
+a.nav-link.sec-li-small2 {
+    font-size: 13px;
+}
+
+}
+

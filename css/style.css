@@ -418,7 +418,7 @@ div#v-tabs-tab {
     background: #FFFFFF;
     border: 1px solid #fff;
     border-radius: 98px;
-    padding: 13px 15px;
+    padding: 8px 4px;
 }
 
 .sec-slary-h {
@@ -559,7 +559,7 @@ div#v-tabs-tab {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 120px;
+    font-size: 100px;
     line-height: 129%;
     text-align: center;
     color: #FFFFFF;
@@ -618,4 +618,7 @@ line-height: 267.4%;
 text-align: center;
 color: #FFFFFF;
 
+}
+div#nav-tabContent {
+    padding-top: 80px !important;
 }
