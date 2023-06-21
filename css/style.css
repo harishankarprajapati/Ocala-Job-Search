@@ -154,7 +154,7 @@ a.nav-link.sec-li-small2 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 46px;
     line-height: 135.9%;
     color: #3C3C3A;
 }
@@ -481,6 +481,15 @@ div#v-tabs-tab {
     color: #3C3C3A;
 
 }
+.sec-arrow {
+    background: #F51E52;
+    border-radius: 100px;
+    font-size: 25px ;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    padding: 30px 40px;
+}
 
 .sec-slid-bg:hover,
 .sec-slid-h:hover {
@@ -571,7 +580,7 @@ div#v-tabs-tab {
 }
 
 .sec-btn-padd {
-    padding: 30px 0px 20px 0px;
+    padding: 30px 0px 100px 0px;
 }
 
 .sec-bored-fff {
@@ -606,10 +615,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 267.4%;
-/* or 48px */
-
 text-align: center;
-
 color: #FFFFFF;
 
 }
