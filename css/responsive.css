@@ -41,4 +41,8 @@
     .sec-looh-h {
         font-size: 35px;
     }    
+    .owl-nav {
+        margin-top: -580px !important;
+        float: right;
+    }
 }
