@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ocala Job Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cousine:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cousine:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+    <link rel="icon" href="images/logo.png">
+</head>
+
+
+<body>
+    <!-- main-header -->
+    <div class="container-fluid  sec-header-bgg">
+        <div include-html="header.html" id="header-file"></div>
+        <!-- heading -->
+        <div class="container ">
+            <div class="sec-cont-ww">
+                <h2 class="sec-main-heading-h">
+                    <spam>Specialists in communications <br>
+                        recruitment.</spam> We deliver results for both <br>
+                    client and candidate.
+                </h2>
+            </div>
+        </div>
+        <!-- filtter -->
+        <div class="container">
+            <div class="sec-cont-ww">
+                <h4 class="seac-hhh">Search for jobs</h4>
+                <div class="sec-filt-bhh">
+                    <form class="row m-0">
+                        <div class="col-lg-4">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i
+                                            class="fa-solid fa-magnifying-glass  sec-form-iconn"></i></span>
+                                </div>
+                                <input type="search" placeholder="Search for jobs" required
+                                    class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i
+                                            class="fa-solid fa-briefcase  sec-form-iconn"></i></span>
+                                </div>
+                                <select class="form-control form-control-lg" required>
+                                    <option>Job types</option>
+                                    <option>------</option>
+                                    <option>-------</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 p-0">
+                            <div class="input-group mb-3">
+                                <div class="">
+                                    <button type="submit" class="sec-fitt-btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 p-0">
+                            <div class="input-group mb-3">
+                                <span class="rounded-0  sec-fitee-icc"><i class="fa-solid fa-filter"></i> Filter</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recruit -->
+    <div class="container  sec-margin-recr">
+        <div class="row m-0">
+            <div class="col-lg-6   sec-rexc-bg">
+                <div class="row m-0">
+                    <div class="col col-sm-9">
+                        <p class="sec-looh-p">Looking to</p>
+                        <h4 class="sec-looh-h">Recruit</h4>
+                    </div>
+                    <div class="col col-sm-3">
+                        <p class=""><a href="#"><i class="fa-solid fa-angle-right sec-arrow m-0-padd"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6   sec-rexc-bg2">
+                <div class="row m-0">
+                    <div class="col col-sm-9">
+                        <p class="sec-looh-p">Looking to</p>
+                        <h4 class="sec-looh-h">New Opportunities</h4>
+                    </div>
+                    <div class="col col-sm-3">
+                        <p class=""><a href="#"><i class="fa-solid fa-angle-right sec-arrow m-0-padd"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job Processes -->
+    <div class="container pt-5 pb-5">
+        <p class="secproc-p">Job Processes</p>
+        <h4 class="secproc-h">A Smarter Way to Search For Jobs</h4>
+        <div class="row m-0">
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <img src="images/job-1.png" alt="">
+                    <h4 class="sec-all-pro-p">Create An Account</h4>
+                    <p class="sec-all-pro-h">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut quam nunc,
+                        consequat gravida ligula sit amet</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <img src="images/job-2.png" alt="">
+                    <h4 class="sec-all-pro-p">Search Desired Job</h4>
+                    <p class="sec-all-pro-h">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut quam nunc,
+                        consequat gravida ligula sit amet</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="text-center">
+                    <img src="images/job-3.png" alt="">
+                    <h4 class="sec-all-pro-p">Send Your Resume</h4>
+                    <p class="sec-all-pro-h">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut quam nunc,
+                        consequat gravida ligula sit amet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- We Delivers. -->
+    <div class="container-fluid sec-we-bg">
+        <div class="container">
+            <h4 class="sec-wee-h">We Delivers.</h4>
+        </div>
+    </div>
+
+    <!-- We Delivers-tabs -->
+
+    <div class="container  sec-deliv-marg">
+
+        <div class="">
+            <nav>
+                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Reach Quality
+                        Candidates</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Craft Jobs Ads That
+                        Convert</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Accelerate The
+                        Hiring Process</button>
+                    <button class="nav-link" id="nav-contact22-tab" data-bs-toggle="tab" data-bs-target="#nav-contact22"
+                        type="button" role="tab" aria-controls="nav-contact22" aria-selected="false">Find The Right
+                        Fit</button>
+
+                </div>
+            </nav>
+            <div class="tab-content p-3 " id="nav-tabContent">
+                <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row m-0">
+                        <div class="col-lg-6">
+                            <img class="w-100" src="images/tab-1.png" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="tab-sec-h">We help various business sizes and industries from trucking to
+                                healthcare reach the right talent.</h4>
+                            <p class="sec-tabs-p">If you’re looking for contractors, part-time or full-time employees,
+                                you can find them on
+                                Ocala Job Search</p>
+                            <div class="pt-4">
+                                <a class="sec-tab-btn" href="#">Get Started Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="row m-0">
+                        <div class="col-lg-6">
+                            <img class="w-100" src="images/tab-1.png" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="tab-sec-h">We help various business sizes and industries from trucking to
+                                healthcare reach the right talent.</h4>
+                            <p class="sec-tabs-p">If you’re looking for contractors, part-time or full-time employees,
+                                you can find them on
+                                Ocala Job Search</p>
+                            <div class="pt-4">
+                                <a class="sec-tab-btn" href="#">Get Started Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="row m-0">
+                        <div class="col-lg-6">
+                            <img class="w-100" src="images/tab-1.png" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="tab-sec-h">We help various business sizes and industries from trucking to
+                                healthcare reach the right talent.</h4>
+                            <p class="sec-tabs-p">If you’re looking for contractors, part-time or full-time employees,
+                                you can find them on
+                                Ocala Job Search</p>
+                            <div class="pt-4">
+                                <a class="sec-tab-btn" href="#">Get Started Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact22" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="row m-0">
+                        <div class="col-lg-6">
+                            <img class="w-100" src="images/tab-1.png" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <h4 class="tab-sec-h">We help various business sizes and industries from trucking to
+                                healthcare reach the right talent.</h4>
+                            <p class="sec-tabs-p">If you’re looking for contractors, part-time or full-time employees,
+                                you can find them on
+                                Ocala Job Search</p>
+                            <div class="pt-4">
+                                <a class="sec-tab-btn" href="#">Get Started Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Choose Your Desire Category -->
+    <div class="container-fluid sec-choo-bg">
+        <div class="container">
+            <h3 class="sec-you-hh">Choose Your Desire Category</h3>
+            <!-- 1 -->
+            <div class="sec-disp-fle-you">
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-1.png" alt="">
+                        <h4 class="sec-box-h">Design, Arts
+                            & Crafts</h4>
+                    </div>
+                </div>
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-2.png" alt="">
+                        <h4 class="sec-box-h">Business
+                            Development</h4>
+                    </div>
+                </div>
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-3.png" alt="">
+                        <h4 class="sec-box-h">Real Estate
+                            Business</h4>
+                    </div>
+                </div>
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-4.png" alt="">
+                        <h4 class="sec-box-h">Transport
+                            & Logistics</h4>
+                    </div>
+                </div>
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-5.png" alt="">
+                        <h4 class="sec-box-h">Weather &
+                            Environment</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="sec-disp-fle-you2">
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-6.png" alt="">
+                        <h4 class="sec-box-h">Construction
+                            & Building</h4>
+                    </div>
+                </div>
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-7.png" alt="">
+                        <h4 class="sec-box-h">Sport
+                            & Leisure</h4>
+                    </div>
+                </div>
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-8.png" alt="">
+                        <h4 class="sec-box-h">Education &
+                            Training</h4>
+                    </div>
+                </div>
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-9.png" alt="">
+                        <h4 class="sec-box-h">Engineering</h4>
+                    </div>
+                </div>
+                <div class="you-sec-bgg">
+                    <div class="text-center">
+                        <img src="images/y-10.png" alt="">
+                        <h4 class="sec-box-h">Hairdressing
+                            & Beauty</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Job Opportunity -->
+    <div class="container sec-lat-padd">
+        <h4 class="sec-lat-hh">Latest Job Opportunity</h4>
+        <div class="row m-0 m-0 sec-tab-padding">
+            <div class="col-3">
+                <div class="nav flex-column nav-tabs text-center" id="v-tabs-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <a class="nav-link sec-nn active" id="v-tabs-home-tab" data-bs-toggle="tab" href="#v-tabs-home"
+                        role="tab" aria-controls="v-tabs-home" aria-selected="true">Product Management</a>
+                    <a class="nav-link sec-nn" id="v-tabs-profile-tab" data-bs-toggle="tab" href="#v-tabs-profile"
+                        role="tab" aria-controls="v-tabs-profile" aria-selected="false">Design</a>
+                    <a class="nav-link sec-nn" id="v-tabs-messages-tab" data-bs-toggle="tab" href="#v-tabs-messages"
+                        role="tab" aria-controls="v-tabs-messages" aria-selected="false">Development</a>
+                    <a class="nav-link sec-nn" id="v-tabs-marketing-tab" data-bs-toggle="tab" href="#v-tabs-marketing"
+                        role="tab" aria-controls="v-tabs-marketing" aria-selected="false">Marketing</a>
+                    <a class="nav-link sec-nn" id="v-tabs-service-tab" data-bs-toggle="tab" href="#v-tabs-service"
+                        role="tab" aria-controls="v-tabs-service" aria-selected="false">Customer Service</a>
+                    <a class="nav-link sec-nn" id="v-tabs-estate-tab" data-bs-toggle="tab" href="#v-tabs-estate"
+                        role="tab" aria-controls="v-tabs-estate" aria-selected="false">Real Estate</a>
+                    <a class="nav-link sec-nn" id="v-tabs-transport-tab" data-bs-toggle="tab" href="#v-tabs-transport"
+                        role="tab" aria-controls="v-tabs-transport" aria-selected="false">Transport</a>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="tab-content" id="v-tabs-tabContent">
+                    <div class="tab-pane fade show active" id="v-tabs-home" role="tabpanel"
+                        aria-labelledby="v-tabs-home-tab">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="sec-slid-bg">
+                                    <h4 class="sec-slid-h">Product Designer</h4>
+                                    <div class="row m-0 m-0">
+                                        <div class=" col col-sm-6">
+                                            <p class="sec-full-p">Full Time</p>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <p class="sec-full-p">Product</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="sec-slary-h">$67-83k USD</h4>
+                                    <p class="sec-hours-p">..................................................  1 Hour ago</p>
+                                    <div class="row m-0 m-0 pt-4 align-items-center">
+                                        <div class=" col col-sm-8">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">
+                                                    <div class="sec-bgg-w"></div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 class="sec-git-h">GitLab</h5>
+                                                    <p class="secicon-g-p"><i class="fa-solid fa-users"></i> 1,001-600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-4 ">
+                                            <p class="sec-j-p">16 Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sec-slid-bg">
+                                    <h4 class="sec-slid-h">Product Designer</h4>
+                                    <div class="row m-0 m-0">
+                                        <div class=" col col-sm-6">
+                                            <p class="sec-full-p">Full Time</p>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <p class="sec-full-p">Product</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="sec-slary-h">$67-83k USD</h4>
+                                    <p class="sec-hours-p">..................................................  1 Hour ago</p>
+                                    <div class="row m-0 m-0 pt-4 align-items-center">
+                                        <div class=" col col-sm-8">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">
+                                                    <div class="sec-bgg-w"></div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 class="sec-git-h">GitLab</h5>
+                                                    <p class="secicon-g-p"><i class="fa-solid fa-users"></i> 1,001-600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-4 ">
+                                            <p class="sec-j-p">16 Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sec-slid-bg">
+                                    <h4 class="sec-slid-h">Product Designer</h4>
+                                    <div class="row m-0 m-0">
+                                        <div class=" col col-sm-6">
+                                            <p class="sec-full-p">Full Time</p>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <p class="sec-full-p">Product</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="sec-slary-h">$67-83k USD</h4>
+                                    <p class="sec-hours-p">..................................................  1 Hour ago</p>
+                                    <div class="row m-0 m-0 pt-4 align-items-center">
+                                        <div class=" col col-sm-8">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">
+                                                    <div class="sec-bgg-w"></div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 class="sec-git-h">GitLab</h5>
+                                                    <p class="secicon-g-p"><i class="fa-solid fa-users"></i> 1,001-600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-4 ">
+                                            <p class="sec-j-p">16 Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sec-slid-bg">
+                                    <h4 class="sec-slid-h">Product Designer</h4>
+                                    <div class="row m-0 m-0">
+                                        <div class=" col col-sm-6">
+                                            <p class="sec-full-p">Full Time</p>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <p class="sec-full-p">Product</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="sec-slary-h">$67-83k USD</h4>
+                                    <p class="sec-hours-p">..................................................  1 Hour ago</p>
+                                    <div class="row m-0 m-0 pt-4 align-items-center">
+                                        <div class=" col col-sm-8">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">
+                                                    <div class="sec-bgg-w"></div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 class="sec-git-h">GitLab</h5>
+                                                    <p class="secicon-g-p"><i class="fa-solid fa-users"></i> 1,001-600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-4 ">
+                                            <p class="sec-j-p">16 Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-profile" role="tabpanel" aria-labelledby="v-tabs-profile-tab">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="sec-slid-bg">
+                                    <h4 class="sec-slid-h">Product Designer</h4>
+                                    <div class="row m-0 m-0">
+                                        <div class=" col col-sm-6">
+                                            <p class="sec-full-p">Full Time</p>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <p class="sec-full-p">Product</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="sec-slary-h">$67-83k USD</h4>
+                                    <p class="sec-hours-p">..................................................  1 Hour ago</p>
+                                    <div class="row m-0 m-0 pt-4 align-items-center">
+                                        <div class=" col col-sm-8">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">
+                                                    <div class="sec-bgg-w"></div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 class="sec-git-h">GitLab</h5>
+                                                    <p class="secicon-g-p"><i class="fa-solid fa-users"></i> 1,001-600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-4 ">
+                                            <p class="sec-j-p">16 Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sec-slid-bg">
+                                    <h4 class="sec-slid-h">Product Designer</h4>
+                                    <div class="row m-0 m-0">
+                                        <div class=" col col-sm-6">
+                                            <p class="sec-full-p">Full Time</p>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <p class="sec-full-p">Product</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="sec-slary-h">$67-83k USD</h4>
+                                    <p class="sec-hours-p">..................................................  1 Hour ago</p>
+                                    <div class="row m-0 m-0 pt-4 align-items-center">
+                                        <div class=" col col-sm-8">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">
+                                                    <div class="sec-bgg-w"></div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 class="sec-git-h">GitLab</h5>
+                                                    <p class="secicon-g-p"><i class="fa-solid fa-users"></i> 1,001-600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-4 ">
+                                            <p class="sec-j-p">16 Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sec-slid-bg">
+                                    <h4 class="sec-slid-h">Product Designer</h4>
+                                    <div class="row m-0 m-0">
+                                        <div class=" col col-sm-6">
+                                            <p class="sec-full-p">Full Time</p>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <p class="sec-full-p">Product</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="sec-slary-h">$67-83k USD</h4>
+                                    <p class="sec-hours-p">..................................................  1 Hour ago</p>
+                                    <div class="row m-0 m-0 pt-4 align-items-center">
+                                        <div class=" col col-sm-8">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">
+                                                    <div class="sec-bgg-w"></div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 class="sec-git-h">GitLab</h5>
+                                                    <p class="secicon-g-p"><i class="fa-solid fa-users"></i> 1,001-600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-4 ">
+                                            <p class="sec-j-p">16 Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="sec-slid-bg">
+                                    <h4 class="sec-slid-h">Product Designer</h4>
+                                    <div class="row m-0 m-0">
+                                        <div class=" col col-sm-6">
+                                            <p class="sec-full-p">Full Time</p>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                            <p class="sec-full-p">Product</p>
+                                        </div>
+                                    </div>
+                                    <h4 class="sec-slary-h">$67-83k USD</h4>
+                                    <p class="sec-hours-p">..................................................  1 Hour ago</p>
+                                    <div class="row m-0 m-0 pt-4 align-items-center">
+                                        <div class=" col col-sm-8">
+                                            <div class="row m-0">
+                                                <div class="col-sm-4">
+                                                    <div class="sec-bgg-w"></div>
+                                                </div>
+                                                <div class="col-sm-8">
+                                                    <h5 class="sec-git-h">GitLab</h5>
+                                                    <p class="secicon-g-p"><i class="fa-solid fa-users"></i> 1,001-600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-4 ">
+                                            <p class="sec-j-p">16 Jobs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-messages" role="tabpanel"
+                        aria-labelledby="v-tabs-messages-tab">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
+                        mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                        commodi culpa est sed ad amet.
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-marketing" role="tabpanel"
+                        aria-labelledby="v-tabs-marketing-tab">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
+                        mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                        commodi culpa est sed ad amet.
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-service" role="tabpanel"
+                        aria-labelledby="v-tabs-service-tab">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
+                        mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                        commodi culpa est sed ad amet.
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-estate" role="tabpanel"
+                        aria-labelledby="v-tabs-estate-tab">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
+                        mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                        commodi culpa est sed ad amet.
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-transport" role="tabpanel"
+                    aria-labelledby="v-tabs-transport-tab">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, doloremque minima
+                    mollitia sapiente illo ut harum fugit explicabo error perspiciatis at cumque nisi eaque
+                    commodi culpa est sed ad amet.
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- /-footer-/ -->
+    <div include-html="footer.html" id="footer-file"></div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+</script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/include-html.min.js"></script>
+</body>
+
+</html>
