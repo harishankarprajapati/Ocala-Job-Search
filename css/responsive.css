@@ -140,7 +140,9 @@
     a.navbar-brand {
         width: 61%;
     }
-   
+    img.jov-sec-img {
+        height: auto;
+    }
     .sec-cont-btttn2 , .sec-cont-btttn3 , .sec-cont-btttn1 {
         padding: 15px 33px 15px 49px;
         margin-left: -20px;
@@ -197,6 +199,15 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 31px;
+    }
+    .sec-lat-padd {
+        padding: 60px 0px 0px 0px;
+    }
+    .sec-btn-padd {
+        padding: 30px 0px 38px 0px;
+    }
+    .sec-footer-bg {
+        padding: 30px 0px 20px 0px;
     }
     
 }

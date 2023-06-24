@@ -43,7 +43,7 @@ a.nav-link.sec-li-small2 {
 .sec-cont-btttn2 {
     color: #fff;
     background: #F51E52;
-    border-radius: 0px 0px 0px 40px;
+    border-radius: 0px 40px 40px 60px;
     padding: 15px 40px 15px 30px;
     margin-left: -35px;
 }
@@ -62,6 +62,10 @@ a.nav-link.sec-li-small2 {
     border-radius: 0px 40px 40px 60px;
     padding: 15px 30px;
     margin-left: -35px;
+}
+
+img.jov-sec-img {
+    height: 235px;
 }
 
 .sec-main-heading-h {
@@ -481,10 +485,11 @@ div#v-tabs-tab {
     color: #3C3C3A;
 
 }
+
 .sec-arrow {
     background: #F51E52;
     border-radius: 100px;
-    font-size: 25px ;
+    font-size: 25px;
     color: #fff;
     width: 90px;
     height: 90px;
@@ -553,7 +558,7 @@ div#v-tabs-tab {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 0px 20px 0px;
-} 
+}
 
 .sec-foot-hh-main {
     font-family: 'Montserrat';
@@ -609,16 +614,189 @@ div#v-tabs-tab {
     color: #FFFFFF;
 
 }
-.copy-right-sec{
+
+.copy-right-sec {
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 267.4%;
-text-align: center;
-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 267.4%;
+    text-align: center;
+    color: #FFFFFF;
 
 }
+
 div#nav-tabContent {
     padding-top: 80px !important;
+}
+
+/* about */
+.sec-header-bgg222 {
+    background-image: url(../images/all-menu-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px 150px 0px;
+}
+
+.all-sec-name-h {
+    color: #EDEDED;
+    font-size: 60px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 135.9%;
+    padding-top: 90px;
+}
+
+.sec-paa-al {
+    padding: 60px 0px;
+
+}
+
+.sec-h4-aa {
+    color: #3C3C3A;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 135.9%;
+    padding: 10px;
+}
+
+.secp-aa {
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat';
+    line-height: 158.4%;
+}
+
+.sec-vbtn-a {
+    border-radius: 0px 40px 40px 40px;
+    background: var(--color-2, #F51E52);
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.co-sec-aboy {
+    width: 70%;
+    margin: auto;
+    background-color: #F7ECDC;
+    padding: 60px 60px;
+    text-align: center;
+    margin-bottom: 60px
+}
+
+.sec-bbba-h {
+    color: #3C3C3A;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 135.9%;
+}
+
+.sec-bbba-p {
+    color: #000;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat';
+    line-height: 180%;
+}
+
+.co-sec-aboy2 {
+    width: 70%;
+    margin: auto;
+    padding: 60px 60px;
+    text-align: center;
+    margin-bottom: 60px
+}
+
+.sec-team-h {
+    color: #3C3C3A;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 135.9%;
+}
+.sec-t-hh{
+    color: #3C3C3A;
+text-align: center;
+font-size: 25px;
+font-family: 'Montserrat';
+font-weight: 700;
+line-height: 135.9%;
+padding-top: 10px;
+}
+.sec-ma-p{
+    color: #3C3C3A;
+text-align: center;
+font-size: 16px;
+font-family: 'Montserrat';
+font-weight: 500;
+line-height: 135.9%;
+}
+.sec-cont-icon{
+    border-radius: 0px 25px 25px 25px;
+background: #F51E52;
+padding: 1px 30px;
+display: flex;
+justify-content: space-evenly;
+width: 70%;
+margin: auto;
+}
+.sec-icon-aa{
+    color: #FFF;
+font-size: 20px;
+ padding: 15px;
+ border-right: 1px solid #CB0031;
+}
+.sec-pat-t{
+    padding: 90px 0px 0px 0px;
+    text-align: center;
+}
+.sec-ppin-p{
+    color: #3C3C3A;
+text-align: center;
+font-size: 25px;
+font-family: 'Montserrat';
+font-weight: 700;
+line-height: 135.9%;
+}
+.sec-ppin-p22 a{
+color: #F51E52;
+}
+
+/* blogs */
+.sec-blog-padd{
+    padding: 60px 0px;
+}
+.sec-blog-img{
+    width: 100%;
+}
+.sec-date-p{
+    color: #848484;
+font-size: 18px;
+font-family: 'Montserrat';
+line-height: 158.4%;
+padding-top: 10px;
+}
+.sec-paa-bbbb{
+    padding: 20px;
+}
+.sec-line-blof-h{
+    color: #3C3C3A;
+font-size: 30px;
+font-family: 'Montserrat';
+font-weight: 700;
+line-height: 135.9%;
+}
+.sec-blog-btn{
+    color: #F51E52;
+font-size: 20px;
+font-family: 'Montserrat';
+font-weight: 700;
+line-height: 158.4%;
 }

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ocala Job Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cousine:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cousine:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+    <link rel="icon" href="images/logo.png">
+</head>
+
+
+<body>
+    <!-- main-header -->
+    <div class="container-fluid  sec-header-bgg222">
+        <div include-html="header.html" id="header-file"></div>
+        <!-- heading -->
+        <!-- about -->
+        <div class="container">
+            <h1 class="all-sec-name-h">About Ocala Jobs</h1>
+        </div>
+    </div>
+
+    <!-- Specialists -->
+    <div class="container sec-paa-al">
+        <div class="text-center">
+            <h4 class="sec-h4-aa">Specialists in communications recruitment. We deliver results for both client and
+                candidate.</h4>
+            <h4 class="sec-h4-aa ">Permanent • Interim • Freelance</h4>
+            <p class="secp-aa">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="text-center pt-4">
+                <a href="#" class="sec-vbtn-a">Meet The Team</a>
+            </div>
+            <h4 class="sec-h4-aa pt-4">Insight • Integrity • Results</h4>
+        </div>
+    </div>
+
+    <!-- img -->
+    <div class="container-fluid pb-4">
+        <img class="w-100" src="images/about-3.png" alt="">
+    </div>
+
+
+    <!-- About US -->
+    <div class="container ">
+        <div class="co-sec-aboy">
+            <h5 class="sec-bbba-h">About US</h5>
+            <p class="sec-bbba-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
+            <p class="sec-bbba-p">
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+                versions of Lorem Ipsum.</p>
+        </div>
+    </div>
+
+    <!-- The Team Ocala Jobs -->
+
+    <div class="container">
+        <div class="co-sec-aboy2">
+            <h4 class="sec-team-h">The Team Ocala Jobs</h4>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img src="images/t-1.png" alt="">
+                        <h6 class="sec-t-hh">John Doe</h6>
+                        <p class="sec-ma-p">Managing Director</p>
+                        <div class="sec-cont-icon">
+                            <a href="#"><i class="fa-solid fa-envelope  sec-icon-aa"></i></a>
+                            <a href="#"><i class="fa-solid fa-phone  sec-icon-aa"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin  sec-icon-aa"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img src="images/t-2.png" alt="">
+                        <h6 class="sec-t-hh">John Doe</h6>
+                        <p class="sec-ma-p">Managing Director</p>
+                        <div class="sec-cont-icon">
+                            <a href="#"><i class="fa-solid fa-envelope  sec-icon-aa"></i></a>
+                            <a href="#"><i class="fa-solid fa-phone  sec-icon-aa"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin  sec-icon-aa"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <img src="images/t-3.png" alt="">
+                        <h6 class="sec-t-hh">John Doe</h6>
+                        <p class="sec-ma-p">Managing Director</p>
+                        <div class="sec-cont-icon">
+                            <a href="#"><i class="fa-solid fa-envelope  sec-icon-aa"></i></a>
+                            <a href="#"><i class="fa-solid fa-phone  sec-icon-aa"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin  sec-icon-aa"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="sec-pat-t">
+                <p class="sec-ppin-p">Interested in a career in recruitment? We’re always looking for talented people to join our team!</p>
+
+                <p class="sec-ppin-p"> If you think you have the relevant experience and skills,<br>
+                    then <span class="sec-ppin-p22"> <a href=""> Apply Now </a> </span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- /-footer-/ -->
+    <div include-html="footer.html" id="footer-file"></div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/include-html.min.js"></script>
+</body>
+
+</html>
