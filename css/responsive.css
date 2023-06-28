@@ -209,5 +209,51 @@
     .sec-footer-bg {
         padding: 30px 0px 20px 0px;
     }
-    
+    .sec-result-h {
+        color: #3C3C3A;
+        font-size: 25px;
+    }
+    .sec-job-na-h {
+        color: #000;
+        font-size: 20px;
+    }
+    .ul.nav.nav-pills{
+        display: block !important;
+    }
+    .sectab2-p {
+        color: #000;
+        font-size: 19px;
+    }
+    li.active .sectab2-p {
+        font-weight: 700;
+        font-size: 19px;
+    }
+    .all-sec-name-h {
+        color: #EDEDED;
+        font-size: 30px;
+    }
+    .sec-header-bgg222 {
+        padding: 0px 0px 80px 0px;
+    }
+    #secfo {
+        width: 100%;
+        margin: auto;
+        padding: 30px 10px;
+    }
+    label {
+        color: #3C3C3A;
+        text-align: center;
+        font-size: 18px;
+
+    }
+    .sec-post-btn {
+        color: #FFF;
+        font-size: 20px;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        border-radius: 0px 40px 40px 40px;
+        background: var(--color-2, #F51E52);
+        padding: 14px 14px;
+        margin-top: 20px;
+    }
 }

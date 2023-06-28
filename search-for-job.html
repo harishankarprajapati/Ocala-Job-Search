@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ocala Job Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cousine:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cousine:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playball&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+    <link rel="icon" href="images/logo.png">
+</head>
+
+
+<body>
+    <!-- main-header -->
+    <div class="container-fluid  sec-header-bggg2">
+        <div include-html="header.html" id="header-file"></div>
+        <!-- heading -->
+        <div class="container ">
+            <div class="sec-cont-ww">
+                <h2 class="sec-main-heading-h">
+                    Search for job
+                </h2>
+            </div>
+        </div>
+        <!-- filtter -->
+        <div class="container">
+            <div class="sec-cont-ww">
+                <h4 class="seac-hhh">Search for jobs</h4>
+                <div class="sec-filt-bhh">
+                    <form class="row m-0 m-0">
+                        <div class="col-lg-4">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i
+                                            class="fa-solid fa-magnifying-glass  sec-form-iconn"></i></span>
+                                </div>
+                                <input type="search" placeholder="Search for jobs" required
+                                    class="form-control form-control-lg" aria-label="Amount (to the nearest dollar)">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-0">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text rounded-0"><i
+                                            class="fa-solid fa-briefcase  sec-form-iconn"></i></span>
+                                </div>
+                                <select class="form-control form-control-lg" required>
+                                    <option>Job types</option>
+                                    <option>------</option>
+                                    <option>-------</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 p-0">
+                            <div class="input-group mb-3">
+                                <div class="sec-btn-cc">
+                                    <button type="submit" class="sec-fitt-btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 p-0">
+                            <div class="input-group mb-3">
+                                <span class="rounded-0  sec-fitee-icc"><i class="fa-solid fa-filter"></i> Filter</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jobs search results -->
+    <div class="container">
+        <h2 class="sec-result-h">Jobs search results</h2>
+        <p class="sec-result-p">We've found 31 jobs that match your search!</p>
+    </div>
+
+    <!-- Latest Job Opportunity -->
+    <div class="container sec-lat-padd">
+        <div class="row m-0 m-0 m-0 sec-tab-padng">
+            <div class="col-lg-5">
+                <div class="nav flex-column nav-tabs text-center" id="v-tabs-tab2" role="tablist"
+                    aria-orientation="vertical">
+                    <div class="form-group">
+                        <input type="search" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Send me jobs for this search" required>
+                        <p class="sec-show-10">Showing 100 results for “Business Development Man....</p>
+                    </div>
+                    <a class="nav-link sec-nna active" id="v-tabs-home-tab" data-bs-toggle="tab" href="#v-tabs-home"
+                        role="tab" aria-controls="v-tabs-home" aria-selected="true">
+                        <div class="sec-job-bord">
+                            <!-- jon=b name -->
+                            <div class="row m-0  sec-name-job">
+                                <div class="col-sm-11">
+                                    <h4 class="sec-job-na-h">Manager, Senior Manager - Customer Success | SaaS &
+                                        Software Products</h4>
+                                </div>
+                                <div class="col-sm-1">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <p class="sec-line-p">Lorem Ipsum Private Limited</p>
+                            </div>
+                            <!-- all-detal -->
+                            <div class="all-deat-ic">
+                                <p class="sec-all-dea-p"><i class="fa-regular fa-user"></i> Full time</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-location-dot"></i> Ocala</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-briefcase"></i> 1-4 Years</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-dollar-sign"></i> $20.5K-$26K a year</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-child"></i> Sales B2B</p>
+                            </div>
+                            <!-- all-time -->
+                            <div class="sec-time">
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-clock"></i> 2 days ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link sec-nna" id="v-tabs-profile-tab" data-bs-toggle="tab" href="#v-tabs-profile"
+                        role="tab" aria-controls="v-tabs-profile" aria-selected="false">
+                        <div class="sec-job-bord">
+                            <!-- jon=b name -->
+                            <div class="row m-0  sec-name-job">
+                                <div class="col-sm-11">
+                                    <h4 class="sec-job-na-h">Manager, Senior Manager - Customer Success | SaaS &
+                                        Software Products</h4>
+                                </div>
+                                <div class="col-sm-1">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <p class="sec-line-p">Lorem Ipsum Private Limited</p>
+                            </div>
+                            <!-- all-detal -->
+                            <div class="all-deat-ic">
+                                <p class="sec-all-dea-p"><i class="fa-regular fa-user"></i> Full time</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-location-dot"></i> Ocala</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-briefcase"></i> 1-4 Years</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-dollar-sign"></i> $20.5K-$26K a year</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-child"></i> Sales B2B</p>
+                            </div>
+                            <!-- all-time -->
+                            <div class="sec-time">
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-clock"></i> 2 days ago</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="nav-link sec-nna" id="v-tabs-messages-tab" data-bs-toggle="tab" href="#v-tabs-messages"
+                        role="tab" aria-controls="v-tabs-messages" aria-selected="false">
+                        <div class="sec-job-bord">
+                            <!-- jon=b name -->
+                            <div class="row m-0  sec-name-job">
+                                <div class="col-sm-11">
+                                    <h4 class="sec-job-na-h">Manager, Senior Manager - Customer Success | SaaS &
+                                        Software Products</h4>
+                                </div>
+                                <div class="col-sm-1">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                                <p class="sec-line-p">Lorem Ipsum Private Limited</p>
+                            </div>
+                            <!-- all-detal -->
+                            <div class="all-deat-ic">
+                                <p class="sec-all-dea-p"><i class="fa-regular fa-user"></i> Full time</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-location-dot"></i> Ocala</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-briefcase"></i> 1-4 Years</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-dollar-sign"></i> $20.5K-$26K a year</p>
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-child"></i> Sales B2B</p>
+                            </div>
+                            <!-- all-time -->
+                            <div class="sec-time">
+                                <p class="sec-all-dea-p"><i class="fa-solid fa-clock"></i> 2 days ago</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <div class="tab-content" id="v-tabs-tabContent">
+                    <div class="tab-pane fade show active" id="v-tabs-home" role="tabpanel"
+                        aria-labelledby="v-tabs-home-tab">
+                        <div class="sec-main-job-border">
+                            <!-- jon=b name -->
+                            <div class="row m-0  sec-name-job">
+                                <div class="col-sm-8">
+                                    <h4 class="sec-job-na-h">Manager, Senior Manager - Customer Success | SaaS &
+                                        Software Products</h4>
+                                </div>
+                                <div class="col-sm-1">
+                                    <i class="fa-solid fa-share-from-square"></i>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="sec-aaply-job-btn2">
+                                        <a class="sec-aaply-job-btn" href="#">Apply Now</a>
+                                    </div>
+                                </div>
+                                <p class="sec-line-p">Lorem Ipsum Private Limited</p>
+                            </div>
+                            <!-- tab -->
+                            <div id="exTab1" class="container sec-tab-2">
+                                <ul class="nav nav-pills">
+                                    <li class="active">
+                                        <a class="sectab2-p" href="#1a" data-toggle="tab">Highlights</a>
+                                    </li>
+                                    <li><a class="sectab2-p" href="#2a" data-toggle="tab">Job Description</a>
+                                    </li>
+                                    <li><a class="sectab2-p" href="#3a" data-toggle="tab">More Info</a>
+                                    </li>
+                                    <li><a class="sectab2-p" href="#4a" data-toggle="tab">Recruiter Information</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content clearfix">
+                                    <div class="tab-pane active" id="1a">
+                                        <div class="secborder-2">
+                                            <div class="row m-0">
+                                                <div class="col-lg-4">
+                                                    <!-- all-detal -->
+                                                    <div class="all-deat-ic">
+                                                        <p class="sec-all-dea-p"><i
+                                                                class="fa-solid fa-location-dot"></i> Ocala</p>
+                                                        <p class="sec-all-dea-p"><i class="fa-solid fa-briefcase"></i>
+                                                            1-4 Years</p>
+                                                        <p class="sec-all-dea-p"><i class="fa-solid fa-clock"></i> 2
+                                                            days ago</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="all-deat-ic">
+                                                        <p class="sec-all-dea-p"><i class="fa-solid fa-dollar-sign"></i>
+                                                            $20.5K-$26K a year</p>
+                                                        <p class="sec-all-dea-p"><i class="fa-solid fa-child"></i> Sales
+                                                            B2B</p>
+                                                        <p class="sec-all-dea-p"><i class="fa-solid fa-eye"></i> 60</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="all-deat-ic">
+                                                        <p class="sec-all-dea-p"><i
+                                                                class="fa-solid fa-arrow-rotate-right"></i>
+                                                            4 Applied</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="2a">
+                                        <h3>We use the class nav-pills instead of nav-tabs which automatically creates a
+                                            background color for the tab</h3>
+                                    </div>
+                                    <div class="tab-pane" id="3a">
+                                        <h3>We applied clearfix to the tab-content to rid of the gap between the tab and
+                                            the content</h3>
+                                    </div>
+                                    <div class="tab-pane" id="4a">
+                                        <h3>We use css to change the background color of the content to be equal to the
+                                            tab</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Send Similar jobs -->
+                            <div class="secbg-simp">
+                                <div class="row m-0">
+                                    <div class="col-lg-8">
+                                        <p class="sec-get-p">Get notified for jobs based on your search when they are
+                                            posted</p>
+                                    </div>
+                                    <div class="col-lg-4"></div>
+
+                                </div>
+                            </div>
+                            <h5 class="sec-ddd-h">Job Description</h5>
+                            <p class="sec-ddd-p">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when
+                                looking at its layout. The point of using. Lorem Ipsum It is a long established fact
+                                that a reader will be
+                                distracted by the readable content of a page when looking at its layout. The point of
+                                using Lorem
+                                Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+
+                            <h5 class="sec-ddd-h">Location: WFH</h5>
+                            <p class="sec-ddd-p">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when
+                                looking at its layout. The point of using. Lorem Ipsum It is a long established fact
+                                that a reader will be
+                                distracted by the readable content of a page when looking at its layout. The point of
+                                using Lorem
+                                Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-tabs-profile" role="tabpanel"
+                            aria-labelledby="v-tabs-profile-tab">
+                            <div class="sec-main-job-border">
+                                <!-- jon=b name -->
+                                <div class="row m-0  sec-name-job">
+                                    <div class="col-sm-8">
+                                        <h4 class="sec-job-na-h">Manager, Senior Manager - Customer Success | SaaS &
+                                            Software Products</h4>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <i class="fa-solid fa-share-from-square"></i>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="sec-aaply-job-btn2">
+                                            <a class="sec-aaply-job-btn" href="#">Apply Now</a>
+                                        </div>
+                                    </div>
+                                    <p class="sec-line-p">Lorem Ipsum Private Limited</p>
+                                </div>
+                                <!-- tab -->
+                                <div id="exTab1" class="container sec-tab-2">
+                                    <ul class="nav nav-pills">
+                                        <li class="active">
+                                            <a class="sectab2-p" href="#1a" data-toggle="tab">Highlights</a>
+                                        </li>
+                                        <li><a class="sectab2-p" href="#2a" data-toggle="tab">Job Description</a>
+                                        </li>
+                                        <li><a class="sectab2-p" href="#3a" data-toggle="tab">More Info</a>
+                                        </li>
+                                        <li><a class="sectab2-p" href="#4a" data-toggle="tab">Recruiter Information</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content clearfix">
+                                        <div class="tab-pane active" id="1a">
+                                            <div class="secborder-2">
+                                                <div class="row m-0">
+                                                    <div class="col-lg-4">
+                                                        <!-- all-detal -->
+                                                        <div class="all-deat-ic">
+                                                            <p class="sec-all-dea-p"><i
+                                                                    class="fa-solid fa-location-dot"></i> Ocala</p>
+                                                            <p class="sec-all-dea-p"><i
+                                                                    class="fa-solid fa-briefcase"></i>
+                                                                1-4 Years</p>
+                                                            <p class="sec-all-dea-p"><i class="fa-solid fa-clock"></i> 2
+                                                                days ago</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="all-deat-ic">
+                                                            <p class="sec-all-dea-p"><i
+                                                                    class="fa-solid fa-dollar-sign"></i>
+                                                                $20.5K-$26K a year</p>
+                                                            <p class="sec-all-dea-p"><i class="fa-solid fa-child"></i>
+                                                                Sales
+                                                                B2B</p>
+                                                            <p class="sec-all-dea-p"><i class="fa-solid fa-eye"></i> 60
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="all-deat-ic">
+                                                            <p class="sec-all-dea-p"><i
+                                                                    class="fa-solid fa-arrow-rotate-right"></i>
+                                                                4 Applied</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="2a">
+                                            <h3>We use the class nav-pills instead of nav-tabs which automatically
+                                                creates a
+                                                background color for the tab</h3>
+                                        </div>
+                                        <div class="tab-pane" id="3a">
+                                            <h3>We applied clearfix to the tab-content to rid of the gap between the tab
+                                                and
+                                                the content</h3>
+                                        </div>
+                                        <div class="tab-pane" id="4a">
+                                            <h3>We use css to change the background color of the content to be equal to
+                                                the
+                                                tab</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Send Similar jobs -->
+                                <div class="secbg-simp">
+                                    <div class="row m-0">
+                                        <div class="col-lg-8">
+                                            <p class="sec-get-p">Get notified for jobs based on your search when they
+                                                are
+                                                posted</p>
+                                        </div>
+                                        <div class="col-lg-4"></div>
+
+                                    </div>
+                                </div>
+                                <h5 class="sec-ddd-h">Job Description</h5>
+                                <p class="sec-ddd-p">It is a long established fact that a reader will be distracted by
+                                    the
+                                    readable content of a page when
+                                    looking at its layout. The point of using. Lorem Ipsum It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable content of a page when looking at its layout. The point
+                                    of
+                                    using Lorem
+                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+
+                                <h5 class="sec-ddd-h">Location: WFH</h5>
+                                <p class="sec-ddd-p">It is a long established fact that a reader will be distracted by
+                                    the
+                                    readable content of a page when
+                                    looking at its layout. The point of using. Lorem Ipsum It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable content of a page when looking at its layout. The point
+                                    of
+                                    using Lorem
+                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-tabs-messages" role="tabpanel"
+                            aria-labelledby="v-tabs-messages-tab">
+                            <div class="sec-main-job-border">
+                                <!-- jon=b name -->
+                                <div class="row m-0  sec-name-job">
+                                    <div class="col-sm-8">
+                                        <h4 class="sec-job-na-h">Manager, Senior Manager - Customer Success | SaaS &
+                                            Software Products</h4>
+                                    </div>
+                                    <div class="col-sm-1">
+                                        <i class="fa-solid fa-share-from-square"></i>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="sec-aaply-job-btn2">
+                                            <a class="sec-aaply-job-btn" href="#">Apply Now</a>
+                                        </div>
+                                    </div>
+                                    <p class="sec-line-p">Lorem Ipsum Private Limited</p>
+                                </div>
+                                <!-- tab -->
+                                <div id="exTab1" class="container sec-tab-2">
+                                    <ul class="nav nav-pills">
+                                        <li class="active">
+                                            <a class="sectab2-p" href="#1a" data-toggle="tab">Highlights</a>
+                                        </li>
+                                        <li><a class="sectab2-p" href="#2a" data-toggle="tab">Job Description</a>
+                                        </li>
+                                        <li><a class="sectab2-p" href="#3a" data-toggle="tab">More Info</a>
+                                        </li>
+                                        <li><a class="sectab2-p" href="#4a" data-toggle="tab">Recruiter Information</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content clearfix">
+                                        <div class="tab-pane active" id="1a">
+                                            <div class="secborder-2">
+                                                <div class="row m-0">
+                                                    <div class="col-lg-4">
+                                                        <!-- all-detal -->
+                                                        <div class="all-deat-ic">
+                                                            <p class="sec-all-dea-p"><i
+                                                                    class="fa-solid fa-location-dot"></i> Ocala</p>
+                                                            <p class="sec-all-dea-p"><i
+                                                                    class="fa-solid fa-briefcase"></i>
+                                                                1-4 Years</p>
+                                                            <p class="sec-all-dea-p"><i class="fa-solid fa-clock"></i> 2
+                                                                days ago</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="all-deat-ic">
+                                                            <p class="sec-all-dea-p"><i
+                                                                    class="fa-solid fa-dollar-sign"></i>
+                                                                $20.5K-$26K a year</p>
+                                                            <p class="sec-all-dea-p"><i class="fa-solid fa-child"></i>
+                                                                Sales
+                                                                B2B</p>
+                                                            <p class="sec-all-dea-p"><i class="fa-solid fa-eye"></i> 60
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="all-deat-ic">
+                                                            <p class="sec-all-dea-p"><i
+                                                                    class="fa-solid fa-arrow-rotate-right"></i>
+                                                                4 Applied</p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="2a">
+                                            <h3>We use the class nav-pills instead of nav-tabs which automatically
+                                                creates a
+                                                background color for the tab</h3>
+                                        </div>
+                                        <div class="tab-pane" id="3a">
+                                            <h3>We applied clearfix to the tab-content to rid of the gap between the tab
+                                                and
+                                                the content</h3>
+                                        </div>
+                                        <div class="tab-pane" id="4a">
+                                            <h3>We use css to change the background color of the content to be equal to
+                                                the
+                                                tab</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Send Similar jobs -->
+                                <div class="secbg-simp">
+                                    <div class="row m-0">
+                                        <div class="col-lg-8">
+                                            <p class="sec-get-p">Get notified for jobs based on your search when they
+                                                are
+                                                posted</p>
+                                        </div>
+                                        <div class="col-lg-4"></div>
+
+                                    </div>
+                                </div>
+                                <h5 class="sec-ddd-h">Job Description</h5>
+                                <p class="sec-ddd-p">It is a long established fact that a reader will be distracted by
+                                    the
+                                    readable content of a page when
+                                    looking at its layout. The point of using. Lorem Ipsum It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable content of a page when looking at its layout. The point
+                                    of
+                                    using Lorem
+                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+
+                                <h5 class="sec-ddd-h">Location: WFH</h5>
+                                <p class="sec-ddd-p">It is a long established fact that a reader will be distracted by
+                                    the
+                                    readable content of a page when
+                                    looking at its layout. The point of using. Lorem Ipsum It is a long established fact
+                                    that a reader will be
+                                    distracted by the readable content of a page when looking at its layout. The point
+                                    of
+                                    using Lorem
+                                    Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- /-footer-/ -->
+    <div include-html="footer.html" id="footer-file"></div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/include-html.min.js"></script>
+</body>
+
+</html>

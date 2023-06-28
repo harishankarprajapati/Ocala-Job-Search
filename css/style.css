@@ -914,9 +914,11 @@ textarea {
     font-weight: 700;
     padding: 15px 30px;
 }
-.secc-padd{
+
+.secc-padd {
     padding: 60px 0px;
 }
+
 .sec-li-p {
     color: #3C3C3A;
     text-align: center;
@@ -924,3 +926,246 @@ textarea {
     font-family: 'Montserrat';
     line-height: 135.9%;
 }
+
+#secfo {
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+input,
+select {
+    height: 54px;
+    margin-bottom: 0px;
+}
+
+label {
+    color: #3C3C3A;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 135.9%;
+}
+
+.sec-post-btn {
+    color: #FFF;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    border-radius: 0px 40px 40px 40px;
+    background: var(--color-2, #F51E52);
+    padding: 20px 40px;
+}
+
+.sec-post-btn:hover {
+    background: var(--color-2, #F51E52);
+    color: #FFF;
+}
+
+#secfo textarea {
+    border: var(--bs-border-width) solid var(--bs-border-color) !important;
+}
+
+.form-check-label {
+    color: #3C3C3A;
+    font-size: 18px !important;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    line-height: 100%;
+}
+
+.form-check {
+    border: 1px solid #C2C2C2;
+    background: #FFF;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+
+}
+
+.sec-job-post-p {
+    color: #3C3C3A;
+    font-size: 22px;
+    font-family: 'Montserrat';
+    line-height: 135.9%;
+}
+
+.sec-result-h {
+    color: #3C3C3A;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    line-height: 135.9%;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+}
+
+.sec-result-p {
+    color: #3C3C3A;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat';
+    line-height: 135.9%;
+    padding: 0px 0px 0px 0px;
+}
+
+.sec-header-bggg2 {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0px 80px 0px;
+}
+
+/*  */
+.sec-show-10 {
+    color: #5F5F5F;
+    font-size: 17px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    line-height: 135.9%;
+    padding: 10px 0px;
+    margin: 0px;
+    text-align: left;
+}
+
+.sec-job-bord {
+    border-radius: 23px;
+    border: 2px solid #CAC8C8;
+    padding: 10px;
+}
+
+.sec-name-job {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.sec-job-na-h {
+    color: #000;
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.sec-nna {
+    border: 0 !important;
+}
+
+.sec-line-p {
+    color: #3C3C3A;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    line-height: 135.9%;
+}
+
+.sec-all-dea-p {
+    color: #3C3C3A;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    line-height: 135.9%;
+    padding: 10px 0px 0px 5px;
+    margin: 0px;
+    font-weight: 400;
+}
+
+.sec-time {
+    border-top: 1px solid #E0E0E0;
+    padding: 5px 5px;
+    margin-top: 10px;
+}
+
+.sec-main-job-border {
+    border-radius: 16px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    padding: 20px;
+}
+
+.sec-aaply-job-btn {
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sec-aaply-job-btn2 {
+    border-radius: 0px 40px 40px 40px;
+    background: var(--color-2, #F51E52);
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.container.sec-tab-2 {
+    min-width: 100% !important;
+}
+
+.sectab2-p {
+    color: #000;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+ul.nav.nav-pills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.nav.nav-pills {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px;
+}
+
+li.active .sectab2-p {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    border-bottom: 4px solid #F51E52;
+}
+
+.secborder-2 {
+    border-radius: 16px 16px 16px 16px;
+    border: 1px solid #E0E0E0;
+    background: #FFF;
+    padding: 20px;
+    margin: 10px 0px;
+}
+.secbg-simp{
+    border-radius: 16px 16px 16px 16px;
+background: #EBEBEB;
+padding: 10px 0px;
+}
+.sec-get-p{
+    color: #3C3C3A;
+font-size: 18px;
+font-family: 'Montserrat';
+line-height: 135.9%;
+margin: 0px;
+}
+/*  */
+
+.sec-ddd-h{
+    color: #000;
+font-size: 20px;
+font-family: 'Open Sans';
+font-weight: 700;
+padding-top: 10px;
+}
+.sec-ddd-p{
+    color: #3C3C3A;
+font-size: 18px;
+font-family: 'Montserrat';
+line-height: 173.4%;
+padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+

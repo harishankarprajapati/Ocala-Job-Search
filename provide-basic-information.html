@@ -48,43 +48,66 @@
         <!-- heading -->
         <!-- about -->
         <div class="container">
-            <h1 class="all-sec-name-h">Create an employer account</h1>
+            <h1 class="all-sec-name-h">Provide basic information</h1>
         </div>
     </div>
 
 
-<div class="container secc-padd">
-    <p class="sec-li-p">You haven't posted a job before, so you'll need to create an employer account.v</p>
+    <div class="container secc-padd">
+        
+        <form id="secfo">
+           
+            <p class="sec-job-post-p">Job post will be in <b>English</b> in US </p>
 
-    <form id="secfo">
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Your company's name*</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1"  required>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Your company's number of employees</label>
-          <select class="form-control" id="exampleFormControlSelect1" required>
-            <option>Select an option</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Your first and last name*</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" required >
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Your phone number</label>
-            <p>For account management communication. Not visible to jobseekers.</p>
-            <input type="number" class="form-control" id="exampleFormControlInput1" required >
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn sec-post-btn"> Save and Continue</button>
-          </div>
-      </form>
-</div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Your company's industry*</label>
+                <select class="form-control" id="exampleFormControlSelect1" required>
+                    <option>Select an option</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Company description</label>
+                <p>Introduce your company to people in a few lines.</p>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Job title*</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Your first and last name*</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Where will an employee report to work?*</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                        Employees will report to a specific address
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                        Employees will not report to a specific address
+                    </label>
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Where would you like to advertise this job?*</label>
+                <p>Enter a city or state</p>
+                <input type="text" class="form-control" id="exampleFormControlInput1" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn sec-post-btn">Save and Continue</button>
+            </div>
+        </form>
+    </div>
 
 
 
@@ -106,7 +129,7 @@
 
 
 
-    
+
 
     <!-- /-footer-/ -->
     <div include-html="footer.html" id="footer-file"></div>
